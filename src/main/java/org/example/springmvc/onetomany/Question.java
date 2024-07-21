@@ -1,6 +1,8 @@
-package org.example.springmvc.mapping;
+package org.example.springmvc.onetomany;
 
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="QUESTION")
@@ -13,19 +15,16 @@ public class Question {
     @Column(name="QUESTION")
     private String question;
 
-    @OneToOne
-    @JoinColumn(name="ANSWER_ID")
-    private Answer answer;
+    @OneToMany(mappedBy = "question")
+    private List<Answer> answer;
 
-    public Answer getAnswer() {
+    public List<Answer> getAnswer() {
         return answer;
     }
 
-    public void setAnswer(Answer answer) {
+    public void setAnswer(List<Answer> answer) {
         this.answer = answer;
     }
-
-
 
     public Question(int questionId, String question) {
         this.questionId = questionId;

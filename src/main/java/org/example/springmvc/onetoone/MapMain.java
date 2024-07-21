@@ -1,4 +1,4 @@
-package org.example.springmvc.mapping;
+package org.example.springmvc.onetoone;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

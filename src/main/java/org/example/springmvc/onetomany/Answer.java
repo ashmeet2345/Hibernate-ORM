@@ -1,9 +1,6 @@
-package org.example.springmvc.mapping;
+package org.example.springmvc.onetomany;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="ANSWER")
@@ -14,6 +11,17 @@ public class Answer {
     private int answerId;
 
     private String answer;
+
+    @ManyToOne
+    private Question question;
+
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
+    }
 
     public Answer(int answerId, String answer) {
         this.answerId = answerId;
