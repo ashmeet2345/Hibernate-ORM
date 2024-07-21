@@ -27,7 +27,7 @@ public class Main {
         ad.setAddedDate(new Date());
         ad.setX(234.55D);
 
-        FileInputStream is=new FileInputStream("C:\\Users\\ACER\\Desktop\\pic.jpeg");
+        FileInputStream is=new FileInputStream("C:\\Users\\ACER\\Desktop\\pic.jpg");
         byte[] input=new byte[is.available()];
         is.read(input);
         ad.setImage(input);

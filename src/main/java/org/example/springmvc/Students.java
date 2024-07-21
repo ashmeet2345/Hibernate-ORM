@@ -17,6 +17,16 @@ public class Students {
     @Column(name="CITY")
     private String city;
 
+    private Certificate certificate;
+
+    public Certificate getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
+    }
+
     public Students(int id, String name, String city) {
         this.id = id;
         this.name = name;
