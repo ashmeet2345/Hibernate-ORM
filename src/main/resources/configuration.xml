@@ -13,6 +13,8 @@
         <property name="show_sql">true</property>
         <mapping class="org.example.springmvc.Students"></mapping>
         <mapping class="org.example.springmvc.Address"></mapping>
+        <mapping class="org.example.springmvc.mapping.Question"></mapping>
+        <mapping class="org.example.springmvc.mapping.Answer"></mapping>
 
     </session-factory>
 </hibernate-configuration>
