@@ -16,13 +16,13 @@
         <!--<mapping class="org.example.springmvc.onetoone.Question"></mapping>
         <mapping class="org.example.springmvc.onetoone.Answer"></mapping>-->
 
-        <!--<mapping class="org.example.springmvc.onetomany.Question"></mapping>
-        <mapping class="org.example.springmvc.onetomany.Answer"></mapping>-->
+        <mapping class="org.example.springmvc.onetomany.Question"></mapping>
+        <mapping class="org.example.springmvc.onetomany.Answer"></mapping>
 
         <!--<mapping class="org.example.springmvc.manytomany.Employee"></mapping>
         <mapping class="org.example.springmvc.manytomany.Project"></mapping>-->
 
-        <mapping class="org.example.springmvc.HQL.Student"></mapping>
+        <!--<mapping class="org.example.springmvc.HQL.Student"></mapping>-->
 
     </session-factory>
 </hibernate-configuration>

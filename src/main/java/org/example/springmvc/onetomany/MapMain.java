@@ -31,8 +31,6 @@ public class MapMain {
         q1.setAnswer(answers);
 
         session.save(q1);
-        session.save(a1);
-        session.save(a2);
 
         session.beginTransaction().commit();
 
